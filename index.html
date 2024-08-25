@@ -20,7 +20,7 @@
                 <div class="portfolio-navbar">
                     <ul>
                         <li>
-                            <a href="#about" class="navbar-link">Home</a>
+                            <a href="#about" class="navbar-link active-link">Home</a>
                         </li>
                         <li>
                             <a href="#resume" class="navbar-link">Resume</a>
@@ -37,7 +37,14 @@
 <div class="navbar-toggle">
     <i class="lni lni-grid-alt"></i>
 </div>
+<button type="button" class="theme-toggle">
+<i class="lni lni-night"></i>
+<i class="lni lni-sun"></i>
+
+
+</button>
             </div>
+
         </div>
     </header>
 
@@ -58,7 +65,7 @@
         </div>
 
         <div class="about-image">
-            <img src="image/profile.jpg" alt="about">
+            <img src="image/dp.jpg" alt="about">
         </div>
     </div>
 </div>
@@ -416,13 +423,70 @@ systems.
              
             </div>
         </div>
+
+        <div class="portfolio-container">
+            <h2 style="text-align: center;"><strong>Contact Me</strong></h2>
+            <div class="portfolio-row">
+                <!------ Main Contact Form Begins ------->
+                <form id="contact-form" method="POST" action="#">
+                    <div class="portfolio-row">
+                        <div class="name-email">
+                            <div class="input-wrapper">
+                                <label for="name">Name</label>
+                                <input type="text" class="input-control" name="name" placeholder="Enter your name">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="email">Email</label>
+                                <input type="email" class="input-control" name="email" placeholder="Enter your email">
+                            </div>
+                        </div>
+                        <div class="input-subject">
+                            <label for="subject">Subject</label>
+                            <input type="text" class="input-control" name="subject" placeholder="Enter your subject">
+                        </div>
+                        <div class="input-subject">
+                            <label for="message">Message</label>
+                            <textarea name="message" class="contact-msg" rows="9" placeholder="Your Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="btn-submit">Submit</button>
+                        <div class="loader">
+                            <i class="lni lni-spinner-solid"></i>
+                        </div>
+                        <div class="form-message"></div>
+                    </div>
+                </form>
+                <!------- Main Contact Form Ends -------->
+            </div>
+        </div>
     </section>
+
+    <footer>
+        <div class="portfolio-container">
+            <div class="portfolio-row footer-wrap">
+
+                        <div class="copyright-text">
+                            <p>© Copyright 2024 by <strong>SamWeb</strong></p>
+                        </div>
+
+                        <ul class="social-icons">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+            </div>
+        </div>
+    </footer>
 
 
   
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
     <script src="js/script.js"></script>
 </body>
 
 </html>
+
